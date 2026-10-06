@@ -28,8 +28,8 @@ public class CRUD implements IUsuarioDAO{
 
                 String SQLUsuario =
                         "INSERT INTO Usuario " +
-                                "(CodigoPessoa, Login, Senha, IndicadorAtivo) " +
-                                "VALUES (" + codigoPessoa + ", '" + usuario.getLogin() + "', '" + usuario.getSenha() + "', 1)";
+                                "(CodigoPessoa, Login, Senha, IndicadorMaster, IndicadorAtivo) " +
+                                "VALUES (" + codigoPessoa + ", '" + usuario.getLogin() + "', '" + usuario.getSenha() + "', 0, 1)";
 
                 s.executeUpdate(SQLUsuario);
 
@@ -58,48 +58,115 @@ public class CRUD implements IUsuarioDAO{
 
     //Login
 
-    public boolean VerificarLogin (String tabela, Usuario usuario) {
-        String SQL = "SELECT * FROM USUARIO WHERE LOGIN = '" + usuario.getLogin() + "' AND SENHA = '" + usuario.getSenha() + "'"+ " AND INDICADORATIVO = 1 ";
+    public boolean VerificarLogin(String tabela, Usuario usuario) {
+
+        String SQL = "SELECT USUARIO.* " +
+                "FROM USUARIO " +
+                "JOIN PESSOA ON PESSOA.CODIGO = USUARIO.CODIGOPESSOA " +
+                "WHERE (PESSOA.CPF = '" + usuario.getLogin() + "' " +
+                "OR PESSOA.EMAIL = '" + usuario.getLogin() + "') " +
+                "AND USUARIO.SENHA = '" + usuario.getSenha() + "' " +
+                "AND USUARIO.INDICADORATIVO = 1";
 
         try {
             ResultSet linhasafetadasLogin = s.executeQuery(SQL);
-            return linhasafetadasLogin.next();
 
+            return linhasafetadasLogin.next();
 
         } catch (SQLException e) {
             e.printStackTrace();
-
         }
+
         return false;
     }
 
     //Usuario Master
 
-    public boolean Usuariomaster (Usuario usuario) {
-        String SQL = "SELECT * FROM USUARIO WHERE LOGIN = '" + usuario.getLogin() + "' AND SENHA = '" + usuario.getSenha() + "'" + "RETURNING IndicadorMaster";
+    public boolean Usuariomaster(Usuario usuario) {
+
+        String SQL = "SELECT USUARIO.INDICADORMASTER " +
+                "FROM USUARIO " +
+                "JOIN PESSOA ON PESSOA.CODIGO = USUARIO.CODIGOPESSOA " +
+                "WHERE (PESSOA.CPF = '" + usuario.getLogin() + "' " +
+                "OR PESSOA.EMAIL = '" + usuario.getLogin() + "') " +
+                "AND USUARIO.SENHA = '" + usuario.getSenha() + "'";
 
         try {
             ResultSet linhasafetadas = s.executeQuery(SQL);
 
             if (linhasafetadas.next()) {
-                int IndicadorMaster = linhasafetadas.getInt("IndicadorMaster");
 
-                return true;
+                int indicadorMaster = linhasafetadas.getInt("IndicadorMaster");
+
+                return indicadorMaster == 1;
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return false;
     }
 
-    //SERVIÇO
+
+    //Buscar serviço
+
+    public String BuscarServico(String busca) {
+
+        String SQL;
+
+        try {
+
+            int codigo = Integer.parseInt(busca);
+
+            SQL = "SELECT * FROM SERVICO " +
+                    "WHERE CODIGO = " + codigo +
+                    "AND INDICADORATIVO = 1";
+
+        } catch (NumberFormatException e) {
+
+            SQL = "SELECT * FROM SERVICO " +
+                    "WHERE LOWER(NOME) LIKE LOWER('%" + busca + "%') " +
+                    "AND INDICADORATIVO = 1";
+        }
+
+        try {
+
+            ResultSet resultado = s.executeQuery(SQL);
+
+            if (resultado.next()) {
+
+                String nome = resultado.getString("NOME");
+                String descricao = resultado.getString("DESCRICAO");
+                int duracao = resultado.getInt("DURACAO");
+                double valor = resultado.getDouble("VALOR");
+
+                return "\n===== SERVIÇO ENCONTRADO =====" +
+                        "\nCódigo: " + resultado.getInt("CODIGO") +
+                        "\nNome: " + nome +
+                        "\nDescrição: " + descricao +
+                        "\nDuração: " + duracao + " minutos" +
+                        "\nValor: R$ " + String.format("%.2f", valor);
+
+            } else {
+
+                return "Serviço não encontrado";
+            }
+
+        } catch (SQLException e) {
+
+            e.printStackTrace();
+            return "Erro ao buscar serviço.";
+        }
+    }
+
+    //AGENDAMENTOS
 
     public ArrayList<Agenda> MostrarAgendamentosPorUsuario(Usuario usuario){
         String SQL = "SELECT * FROM AGENDA A "+
-        "JOIN SERVICOAGENDA B ON A.CODIGO = B.CODIGOAGENDA "+
-        "JOIN SERVICO C ON B.CODIGOSERVICO = C.CODIGO "+
-        "JOIN PESSOA D ON D.CODIGO = A.CODIGOPESSOA "+
+                "JOIN SERVICOAGENDA B ON A.CODIGO = B.CODIGOAGENDA "+
+                "JOIN SERVICO C ON B.CODIGOSERVICO = C.CODIGO "+
+                "JOIN PESSOA D ON D.CODIGO = A.CODIGOPESSOA "+
                 "WHERE A.INDICADORATIVO = 1 "+
                 "AND D.LOGIN = " + usuario.getLogin()+
                 " AND D.SENHA = " + usuario.getSenha() +
@@ -123,6 +190,5 @@ public class CRUD implements IUsuarioDAO{
 
 
     }
-
 
 }
