@@ -43,7 +43,7 @@ public class CRUD implements IUsuarioDAO{
     }
 
     //Verificar se usuário já não existe
-    public boolean VerificarUsuarioExistente(String tabela, Usuario usuario){
+    public Boolean VerificarUsuarioExistente(String tabela, Usuario usuario){
         String SQL = "SELECT 1 FROM USUARIO WHERE LOGIN = '" + usuario.getLogin() + "'";
 
         try {
@@ -58,7 +58,7 @@ public class CRUD implements IUsuarioDAO{
 
     //Login
 
-    public boolean VerificarLogin(String tabela, Usuario usuario) {
+    public Boolean VerificarLogin(String tabela, Usuario usuario) {
 
         String SQL = "SELECT USUARIO.* " +
                 "FROM USUARIO " +
@@ -82,7 +82,7 @@ public class CRUD implements IUsuarioDAO{
 
     //Usuario Master
 
-    public boolean Usuariomaster(Usuario usuario) {
+    public Boolean Usuariomaster(Usuario usuario) {
 
         String SQL = "SELECT USUARIO.INDICADORMASTER " +
                 "FROM USUARIO " +
