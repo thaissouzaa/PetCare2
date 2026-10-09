@@ -2,6 +2,7 @@ package controller;
 
 import model.dao.CRUD;
 import model.dao.Conexao;
+import model.dao.Servico;
 
 import java.sql.Statement;
 
@@ -40,6 +41,18 @@ public class ServicoController {
 
             e.printStackTrace();
             return "Erro ao buscar serviço.";
+        }
+    }
+
+    public boolean removerServico(Servico servico) {
+        try {
+
+            return this.CRUDServico.RemoverServico(servico);
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+            return false;
         }
     }
 }

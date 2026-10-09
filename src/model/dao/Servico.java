@@ -2,16 +2,43 @@ package model.dao;
 
 public class Servico {
 
+    private int codigo;
     private String nome;
     private String Descricao;
     private String duracao;
     private String valor;
 
+    //cadastrar um serviço novo
     public Servico(String nome, String descricao, String duracao, String valor) {
         this.nome = nome;
         Descricao = descricao;
         this.duracao = duracao;
         this.valor = valor;
+    }
+
+    //servico que já existe
+    public Servico(Integer codigo, String nome, String descricao, String duracao, String valor) {
+        this.codigo = codigo;
+        this.nome = nome;
+        Descricao = descricao;
+        this.duracao = duracao;
+        this.valor = valor;
+    }
+
+    public Servico() {
+
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public String getDescricao() {
+        return Descricao;
     }
 
     public String getNome() {
@@ -22,7 +49,7 @@ public class Servico {
         this.nome = nome;
     }
 
-    public String getDescricao() {
+    public String getDescricao(String descricao) {
         return Descricao;
     }
 

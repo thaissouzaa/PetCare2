@@ -109,7 +109,7 @@ public class CRUD implements IUsuarioDAO{
     }
 
 
-    //Buscar serviço
+    //SERVIÇOS
 
     public String BuscarServico(String busca) {
 
@@ -160,35 +160,40 @@ public class CRUD implements IUsuarioDAO{
         }
     }
 
-    //AGENDAMENTOS
 
-    public ArrayList<Agenda> MostrarAgendamentosPorUsuario(Usuario usuario){
-        String SQL = "SELECT * FROM AGENDA A "+
-                "JOIN SERVICOAGENDA B ON A.CODIGO = B.CODIGOAGENDA "+
-                "JOIN SERVICO C ON B.CODIGOSERVICO = C.CODIGO "+
-                "JOIN PESSOA D ON D.CODIGO = A.CODIGOPESSOA "+
-                "WHERE A.INDICADORATIVO = 1 "+
-                "AND D.LOGIN = " + usuario.getLogin()+
-                " AND D.SENHA = " + usuario.getSenha() +
-                "ORDER BY DATAHORAINICIO";
+    public boolean RemoverServico(Servico servico) {
+        String SQL = "UPDATE SERVICO SET INDICADORATIVO = 0 WHERE CODIGO = " + servico.getCodigo();
 
-        ArrayList<Agenda> agenda = new ArrayList<>();
         try {
-            ResultSet rset = s.executeQuery(SQL);
+            ResultSet linhasafetadasLogin = s.executeQuery(SQL);
 
-            while (rset.next()){
-                Agenda a = new Agenda();
-                a.getDatahorafinal(rset.getString("DATAHORAINICIO"));
-                a.getDatahorainicio(rset.getString("DATAHORAFINAL"));
+            return linhasafetadasLogin.next();
 
-                return  agenda;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    public ArrayList<Servico> SelecionarTodosServicos(){
+            String SQL = "SELECT * FROM SERVICO WHERE INDICADORATIVO = 1;";
+        try {
+            ResultSet rset = s.executeQuery(SQL); //cria ponteiro para a tabela
+            ArrayList<Servico> lista = new ArrayList<>();
+            while(rset.next()){
+                Servico a = new Servico();
+                a.setNome(rset.getString("nome"));
+                a.setDescricao(rset.getString("descricao"));
+                a.setDuracao(rset.getString("duracao"));
+                a.setValor(rset.getString("valor"));
+                lista.add(a);
             }
+            return lista; //Deu certo!
         }catch (Exception e){
             e.printStackTrace();
         }
         return null; //deu errado!
-
-
     }
 
 }

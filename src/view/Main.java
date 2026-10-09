@@ -45,108 +45,96 @@ public class Main {
                         if (usuarioController.VerificarLogin("usuario", usuarioLogin)) {
 
                             System.out.println("Login efetuado com sucesso\n");
-                            if (usuarioController.UsuarioMaster("usuario", usuarioLogin)) {
 
-                                //TELA ADMINISTRATIVA
+                            boolean Master = usuarioController.UsuarioMaster("usuario", usuarioLogin);
 
-                                int opcaoAdmin;
+                            do {
+                                System.out.println("\n===== MENU PETCARE =====");
 
-                                do {
-                                    System.out.println("TELA ADMINISTRATIVA");
+                                if (Master) {
                                     System.out.println("1 - Cadastrar novo serviço");
-                                    System.out.println("2 - Buscar serviço");
+                                }
+
+                                System.out.println("2 - Buscar serviço");
+
+                                if (Master) {
                                     System.out.println("3 - Remover serviço");
                                     System.out.println("4 - Atualizar serviço");
-                                    System.out.println("5 - Sair");
+                                } else {
+                                    System.out.println("3 - Adicionar agendamento");
+                                    System.out.println("4 - Retirar agendamento");
+                                    System.out.println("5 - Confirmar agendamento");
+                                }
 
-                                    opcaoAdmin = sc.nextInt();
-                                    sc.nextLine();
+                                System.out.println("0 - Sair");
+                                System.out.print("Escolha uma opção: ");
 
-                                    switch (opcaoAdmin) {
+                                opcao = sc.nextInt();
+                                sc.nextLine();
 
-                                        case 1:
+                                switch (opcao) {
+
+                                    case 1:
+                                        if (Master) {
                                             System.out.println("Cadastrar novo serviço");
-                                            break;
+                                            // Chamar método de cadastro
+                                        } else {
+                                            System.out.println("Usuário sem permissão de acesso!");
+                                        }
+                                        break;
 
-                                        case 2:
-                                            System.out.println("Buscar serviço");
-                                            break;
+                                    case 2:
+                                        System.out.println("Buscar serviço");
+                                        System.out.println("Digite o nome ou código do serviço:");
 
-                                        case 3:
+                                        String busca = sc.nextLine();
+
+                                        if (servicoController.conectaBD("petcare")) {
+                                            String resultado = servicoController.BuscarServico(busca);
+                                            System.out.println(resultado);
+                                        } else {
+                                            System.out.println("Erro ao conectar ao banco de dados.");
+                                        }
+                                        break;
+
+                                    case 3:
+                                        if (Master) {
                                             System.out.println("Remover serviço");
-                                            break;
-
-                                        case 4:
-                                            System.out.println("Atualizar serviço");
-                                            break;
-
-                                        case 5:
-                                            System.out.println("Saindo...");
-                                            break;
-
-                                        default:
-                                            System.out.println("Opção inválida");
-                                    }
-
-                                } while (opcaoAdmin != 5);
-
-                            } else {
-
-                                //TELA CLIENTE
-
-                                int opcaoCliente;
-
-                                do {
-
-                                    System.out.println("TELA CLIENTE");
-                                    System.out.println("1 - Buscar serviço");
-                                    System.out.println("2 - Adicionar agendamento");
-                                    System.out.println("3 - Retirar agendamento");
-                                    System.out.println("4 - Confirmar agendamento");
-                                    System.out.println("5 - Sair");
-
-                                    opcaoCliente = sc.nextInt();
-                                    sc.nextLine();
-
-                                    switch (opcaoCliente) {
-
-                                        case 1:
-                                            System.out.println("Buscar serviço");
-                                            System.out.println("Digite o nome ou código do serviço:");
-                                            String busca = sc.nextLine();
-
-                                            if (servicoController.conectaBD("petcare")) {
-                                                String resultado = servicoController.BuscarServico(busca);
-                                                System.out.println(resultado);
-
-                                            } else {
-                                                System.out.println("Erro ao conectar ao banco de dados.");
-                                            }
-
-                                            break;
-
-                                        case 2:
+                                            // Chamar método de remoção
+                                        } else {
                                             System.out.println("Adicionar agendamento");
-                                            break;
+                                            // Chamar método de agendamento
+                                        }
+                                        break;
 
-                                        case 3:
+                                    case 4:
+                                        if (Master) {
+                                            System.out.println("Atualizar serviço");
+                                            // Chamar método de atualização
+                                        } else {
                                             System.out.println("Retirar agendamento");
-                                            break;
+                                            // Chamar método de retirada
+                                        }
+                                        break;
 
-                                        case 4:
+                                    case 5:
+                                        if (!Master) {
                                             System.out.println("Confirmar agendamento");
-                                            break;
+                                            // Chamar método de confirmação
+                                        } else {
+                                            System.out.println("Opção inválida.");
+                                        }
+                                        break;
 
-                                        case 5:
-                                            System.out.println("Saindo...");
-                                            break;
+                                    case 0:
+                                        System.out.println("Saindo...");
+                                        break;
 
-                                        default:
-                                            System.out.println("Opção inválida");
-                                    }
+                                    default:
+                                        System.out.println("Opção inválida.");
+                                }
 
-                                } while (opcaoCliente != 5);
-                            }
+                            } while (opcao != 0);
 
                             break;
 
