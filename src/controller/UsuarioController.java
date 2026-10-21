@@ -1,7 +1,7 @@
 package controller;
 
-import model.dao.CRUD;
 import model.dao.Conexao;
+import model.dao.CRUD;
 import model.dao.Pessoa;
 import model.dao.Usuario;
 

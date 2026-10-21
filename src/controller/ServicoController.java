@@ -1,8 +1,9 @@
 package controller;
 
-import model.dao.CRUD;
 import model.dao.Conexao;
+import model.dao.CRUD;
 import model.dao.Servico;
+import java.util.ArrayList;
 
 import java.sql.Statement;
 
@@ -54,5 +55,20 @@ public class ServicoController {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public String InserirServico(Servico servico) {
+        try { return CRUDServico.InserirServico(servico); }
+        catch (Exception e) { e.printStackTrace(); return "Não foi possível cadastrar o serviço."; }
+    }
+
+    public ArrayList<Servico> SelecionarTodosServicos() {
+        try { return CRUDServico.SelecionarTodosServicos(); }
+        catch (Exception e) { e.printStackTrace(); return new ArrayList<>(); }
+    }
+
+    public boolean AtualizarServico(Servico servico) {
+        try { return CRUDServico.AtualizarServico(servico); }
+        catch (Exception e) { e.printStackTrace(); return false; }
     }
 }
