@@ -15,10 +15,12 @@ public class UsuarioController {
     public UsuarioController() {}
 
     public boolean conectaBD(String db) {
+        if (CRUDUsuario != null) return true;
         try {
             Conexao conn = new Conexao();
             conn.conectaBD(db);
             Statement s = conn.getS();
+            if (s == null) return false;
             CRUDUsuario = new CRUD(s);
             return true;
         } catch (Exception e) {
@@ -56,6 +58,15 @@ public class UsuarioController {
         } catch (Exception e) {
             e.printStackTrace();
         } return false;
+    }
+
+    public String BuscarNomeUsuario(Usuario usuario) {
+        try {
+            return this.CRUDUsuario.BuscarNomeUsuario(usuario);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 
     //Verificar Usuário Master

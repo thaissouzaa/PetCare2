@@ -18,6 +18,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        view.fx.PetCareApp.main(args);
+    }
+
+    public static void consoleMain(String[] args) {
 
         //Cria um objeto responsável por chamar as operações relacionadas aos usuários e serviços
 
@@ -39,6 +43,7 @@ public class Main {
 
         switch (opcao) {
 
+            //LOGIN
             case 1:
                 if (usuarioController.conectaBD("petcare")) {
 
@@ -53,15 +58,19 @@ public class Main {
 
                         Usuario usuarioLogin = new Usuario(login, senha);
 
+                        //VERIFICA SE EXISTE
                         if (usuarioController.VerificarLogin("usuario", usuarioLogin)) {
 
                             System.out.println("Login efetuado com sucesso\n");
 
+
+                            //VERIFICA SE É MASTER (ADM)
                             boolean Master = usuarioController.UsuarioMaster("usuario", usuarioLogin);
 
                             do {
                                 System.out.println("\n===== MENU PETCARE =====");
 
+                                //SÓ FICA VISIVEL SE É MASTER
                                 if (Master) {
                                     System.out.println("1 - Gerenciar serviços");
                                 }
@@ -71,6 +80,7 @@ public class Main {
                                 if (Master) {
                                     System.out.println("3 - Listar agendamentos de todos os clientes");
                                     System.out.println("4 - Gerenciar clientes e pets");
+
                                 } else {
                                     System.out.println("3 - Adicionar agendamento");
                                     System.out.println("4 - Retirar agendamento");
@@ -83,6 +93,9 @@ public class Main {
                                 opcao = sc.nextInt();
                                 sc.nextLine();
 
+
+
+                                //OPÇAO QUE O USUARIO ESCOLHEU NO MENU
                                 switch (opcao) {
 
                                     case 1:
@@ -92,6 +105,7 @@ public class Main {
                                             System.out.println("Usuário sem permissão de acesso!");
                                         }
                                         break;
+
 
                                     case 2:
                                         System.out.println("Buscar serviço");

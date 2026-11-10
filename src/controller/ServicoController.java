@@ -13,11 +13,13 @@ public class ServicoController {
     public ServicoController() {}
 
     public boolean conectaBD(String db) {
+        if (CRUDServico != null) return true;
         try {
             Conexao conn = new Conexao();
             conn.conectaBD(db);
 
             Statement s = conn.getS();
+            if (s == null) return false;
 
             CRUDServico = new CRUD(s);
 

@@ -1,0 +1,1076 @@
+---PAGE 1---\nO que é uma regra de negócio?
+Escolha uma opção:
+a. É um requisito que o usuário não conhece muito bem durante a
+criação de um sistema.
+b. Regras de negócio são premissas e restrições aplicadas a uma
+operação comercial de uma empresa, que precisam ser
+atendidas para que o negócio funcione da maneira esperada.
+c. É um tipo de requisito difícil de estimar
+d. É um tipo de requisito que geralmente descreve explicitamente
+as funcionalidades e serviços do sistema.
+e. Definem propriedades e restrições do sistema.
+Analise as opções a seguir e marque a alternativa em que se
+apresentam apenas modelos de qualidade de software.
+Escolha uma opção:
+a. CMMI, COBIT e ISO9001.
+b. CMMI, MPS.BR e COBIT.
+c. CMMI, ISO12207, ISO15504, ISO20000 e ITIL.
+d. CMMI, MPS.BR e ISO9000-1.
+e. CMMI, MPS.BR, ISO9001 e COBIT.
+Frank é um analista de requisitos que acabou de coletar as
+definições com os stakeholders do projeto e está com
+dúvidas sobre a classificação correta:\n---PAGE 2---\nSelecione a alternativa que representa as categorias dos
+requisitos:
+Escolha uma opção:
+a. Processo, processo, projeto, produto, produto, processo.
+b. Processo, projeto, processo, produto, produto, projeto.
+c. Processo, projeto, produto, produto, produto, processo
+d. Projeto, processo, projeto, produto, produto, processo.
+e. Projeto, processo, processo, produto, produto, projeto.
+Em todos os projetos que utilizam a metodologia ágil Scrum, existe
+uma divisão das atividades a serem realizadas em Sprints. Em um
+Sprint de desenvolvimento, o Scrum Master solicita à equipe uma
+reunião para alinhar as atividades. Nessa reunião, os integrantes
+foram convidados a avaliar a complexidade das Histórias de Usuários
+e apresentar uma nota que é representada pela escolha de uma carta
+de baralho.\n---PAGE 3---\nDentro do conceito de Scrum, dá-se o nome a essa reunião de:
+Escolha uma opção:
+a. Daily Scrum
+b. Planning Poker.
+c. CALL
+d. Kick-off
+e. Sprints
+A análise de ponto por função é utilizada como estratégia para estimar
+a complexidade de um projeto, principalmente quando se trata de um
+projeto de escala corporativa. A análise de pontos por função é um
+método que:
+Escolha uma opção:
+a. mede a funcionalidade requisitada com foco no analista de
+desenvolvimento e também nos aspectos do gerente de
+projetos, além de considerar fatores de complexidade da
+tecnologia adotada.
+b. padroniza a medição de projetos de desenvolvimento de
+software. O objetivo é definir uma estimativa de tamanho,
+chamada de pontos de função, que considera as
+funcionalidades efetivadas a partir da ótica do usuário.
+c. permite medir projetos de desenvolvimento e manutenção de
+software e que depende da tecnologia utilizada na
+implementação. O tipo de tecnologia é um fator decisivo no
+projeto.
+d. estima o tamanho do pacote de software adquirido, analisando o
+número de funções desenvolvidas com parâmetros de retorno
+diferente de nulo (null) e também em outros parâmetros que
+indicam erro de código.\n---PAGE 4---\ne. verifica se as telas dos sistemas estão de acordo com a
+quantidade mínima segundo o tamanho do código fonte e outros
+aspectos técnicos, além da tecnologia que está sendo adotada
+no projeto.
+No emprego de técnicas para estimar a duração de atividades, torna-se
+importante que o gerente de projetos siga as boas práticas
+recomendadas. Essas boas práticas podem envolver a possibilidade de
+burlar o calendário, unidades de medidas, características do tamanho
+do projeto e a estimativa de duração das atividades, por exemplo.
+Sobre as boas práticas relacionadas ao emprego das técnicas de
+estimativa de duração das atividades, é correto afirmar que:
+Escolha uma opção:
+a. o gerente de projetos deve incentivar prazos agressivos mesmo
+que fora da realidade, para diminuir o prazo do projeto.
+b. usar diferentes unidades de medidas para especificar a duração
+das atividades consiste em uma boa prática.
+c. recomenda-se que, em projetos muito longos, os gestores
+elaborem progressivamente a duração das atividades.
+d. em grandes projetos, recomenda-se que o gestor solicite a
+estimativa de duração da atividade para a pessoa que a
+executará.
+e. recomenda-se que o gerente burle as estimativas de duração da
+atividade em prol de melhorar sua relação com a equipe.
+O guia pmbok é para identificar o subconjunto do Conjunto de
+conhecimentos em gerenciamento de projetos que é amplamente
+reconhecido como boa prática. Realize as associações referente a este
+tema.\n---PAGE 5---\n● existe um consenso de que a aplicação Resposta 1
+correta dessas habilidades, ferramentas e Escolher...Bo
+técnicas pode aumentar as chances de a
+sucesso em uma ampla série de projetos práticaIdentifi
+diferentes. carAmplame
+nte
+reconhecido
+● o conhecimento e as práticas descritas são Resposta 2
+aplicáveis à maioria dos projetos na maior Escolher...Bo
+parte do tempo, e que existe um consenso a
+geral em relação ao seu valor e sua utilidade. práticaIdentifi
+carAmplame
+nte
+reconhecido
+● fornecer uma visão geral, e não uma Resposta 3
+descrição completa. Escolher...Bo
+a
+práticaIdentifi
+carAmplame
+nte
+reconhecido
+As ferramentas de GCS existentes podem ser de código aberto ou
+proprietárias. As ferramentas proprietárias comercializam a licença de
+uso, garantindo sua propriedade intelectual. Para empresas de
+pequeno porte, qual o tipo de ferramenta de GCS que mais adequada e
+quais os motivos?
+Escolha uma opção:\n---PAGE 6---\na. Empresas de pequeno porte podem optar por quaisquer tipos de
+ferramentas de GCS, e não há nenhuma restrição, seja ela
+financeira, seja de complexidade do processo.
+b. Empresas de pequeno porte podem optar por quaisquer tipos de
+ferramentas de GCS; no entanto, as ferramentas de código
+aberto geralmente são as mais adotadas porque não há
+necessidade de desembolso financeiro para sua adoção.
+c. Empresas de pequeno porte optam por ferramentas de GCS de
+código aberto porque a complexidade dos projetos é mínima, e
+eles geralmente são bem atendidos.
+d.
+Empresas de pequeno porte não utilizam nenhum tipo de
+ferramenta de GCS.
+e. Empresas de pequeno porte só podem optar por ferramentas de
+GCS de código aberto porque nunca têm orçamento suficiente
+para a adoção de ferramentas proprietárias.
+Escolha a melhor alternativa para usabilidade.
+Escolha uma opção:
+a. Mede o grau em que o produto disponibiliza funções que
+satisfazem necessidades estabelecidas e implicadas quando o
+produto é usado sob condições especificadas.
+b. Provê as ferramentas para a avaliação da qualidade de um
+sistema de software tanto por desenvolvedores, compradores ou
+avaliadores independentes.
+c. Avalia o grau no qual o produto tem atributos que permitem que
+seja entendido, aprendido, usado e que seja atraente ao usuário,
+quando usado sob condições especificadas.
+d. O software, ao longo do tempo, se mantém com um
+comportamento consistente com o esperado.\n---PAGE 7---\ne. A divisão contém o padrão para suportar a especificação de
+requisitos de qualidade, tanto para a fase de eliciação dos
+requisitos de qualidade do software quanto como entrada para o
+processo de avaliação da qualidade do software.
+No desenvolvimento de um software, a qualidade é um item de grande
+importância. Sobre as propriedades utilizadas para determinar a
+qualidade de um software, é correto afirmar que:
+Escolha uma opção:
+a. não há preocupação com a facilidade de manutenção do
+software.
+b. não se inclui a confiabilidade esperada do software.
+c. mede-se, exclusivamente, a qualidade da documentação
+produzida para o software.
+d. verifica-se a satisfação de requisitos estabelecidos, incluindo o
+desempenho.
+e. não se abrange questões relativas à interface do software.
+Escolha as alternativas referente ao planejamento de projeto com
+ciclos iterativos.
+Escolha uma ou mais:
+a. Entre outras coisas, é importante que o responsável por este
+planejamento utilize as melhores ferramentas possíveis para
+avaliar a quantidade de esforço a ser despendido no projeto.
+b. O objetivo de um projeto (e também das iterações) deve ser
+sempre um conjunto de artefatos.
+c. Sem definir claramente onde o projeto vai chegar é muito difícil
+estabelecer um bom plano.\n---PAGE 8---\nd. Tal estimativa poderá dar origem tanto ao cronograma geral do
+projeto quanto à estimativa de custo total do projeto.
+e. O objetivo do planejamento de projeto é criar um plano para o
+projeto como um todo.
+Em gerenciamento de projetos, fazer estimativas é uma prática
+constante. As técnicas para estimar custo, esforço e prazo são
+utilizadas pelos gestores de projetos com frequência. Baseado nesse
+conceito, assinale a alternativa que corresponde à relação da medição
+e e estimativa de software em pontos de função.
+Escolha uma opção:
+a. Medição e estimativa de software em pontos de função é uma
+medida que depende da tecnologia que será utilizada para
+implementação.
+b. Medição e estimativa de software em pontos de função têm
+como um de seus objetivos medir a funcionalidade solicitada
+pelo usuário, antes do projeto de software, de forma a estimar
+seu tamanho e seu custo.
+c. Medição e estimativa de software em pontos de função é uma
+medida que depende da linguagem de programação a ser
+utilizada.
+d. Medição e estimativa de software em pontos de função é a
+definição do escopo e da fronteira de aplicação. Deve preceder a
+identificação do tipo de contagem.
+e. Medição e estimativa de software em pontos de função visam a
+estabelecer uma medida de tamanho, em Pontos de Função
+(PF), considerando a funcionalidade implementada, sob o ponto
+de vista do desenvolvedor.
+A qualidade da entrega dos produtos é fundamental para a fidelização
+do cliente e o ganho de confiança. Isto se aplica para software e para
+qualquer outro produto ou serviço que seja fornecido por uma\n---PAGE 9---\nempresa para clientes. Sobre a importância da qualidade de software,
+assinale a alternativa CORRETA
+Escolha uma opção:
+a. Um dos benefícios aliados à qualidade de usuário é melhorar a
+experiência deste.
+b. Embora conquistar o cliente seja bastante importante para a
+empresa fornecedora de software, caso este cause danos
+financeiros ao cliente, não é responsabilidade da fornecedora.
+c. A regra 10 de Myers considera que o custo de um defeito
+localizado aumenta 100 vezes a cada etapa avançada no ciclo
+de desenvolvimento.
+d. Qualidade de software é útil apenas em momentos de
+catástrofes.
+e. A regra 10 de Myers se aplica ao modelo ágil de desenvolvimento
+de sistemas.
+Escolha as alternativas referente ao modelo de qualidade.
+Escolha uma ou mais:
+a. O objetivo é especificado de acordo com um padrão estabelecido
+pelo próprio GQM, que sugere que objetivos sejam estabelecidos
+a partir de diferentes dimensões
+b. Existe um ponto ótimo para o investimento em qualidade que
+baixa os custos com falhas o suficiente para compensar o
+investimento.
+c. Os padrões na área de medidas de qualidade são derivados das
+normas 9126 e 14598, cobrindo as definições matemáticas e o
+detalhamento da aplicação de medidas práticas de qualidade
+interna, externa e de uso.\n---PAGE 10---\nd. Apresenta as características e subcaracterísticas de qualidade
+interna, externa e de uso.
+e. É feita de forma top-down, ou seja, dos objetivos até as métricas,
+enquanto que a interpretação dos resultados é feita de forma
+bottom-up, ou seja, das métricas até os objetivos.
+I) Todas as opções do sistema de vendas pela Web devem ser
+acessadas com no máximo 3 cliques do mouse.
+II) O sistema de log de transações deverá listar todos os usuários
+logados simultaneamente nas aplicações SWIT e DERT.
+III) O orçamento máximo a ser gasto para o desenvolvimento do
+sistema de controle estatístico de qualidade deverá ser de R$
+20.000,00.
+IV) O relatório de bons clientes deverá apresentar todos os clientes
+com compras mensais superiores a R$ 5.000,00.
+V) A atualização de 100 mil registros de vendas não deverá consumir
+mais do que 5 segundos de CPU.
+Escolha uma opção:
+a. Os requisitos I e V são não funcionais; os requisitos II e IV são
+funcionais; o requisito III é de projeto.
+b. Os requisitos I e V são funcionais; os requisitos II e IV são não
+funcionais; o requisito III é de projeto.
+c. Os requisitos I e II são não funcionais; os requisitos III e IV são de
+projeto; o requisito V é funcional.
+d. Os requisitos I, II, III, IV e V são funcionais.
+e. Os requisitos I e V são funcionais; os requisitos II e IV são não
+funcionais; o requisito III é de processo.\n---PAGE 11---\nQual é a característica de um requisito funcional?
+Escolha uma opção:
+a. Expressam informações relacionadas com a segurança do
+sistema.
+b. É mais voltado para características que podem ser mensuradas e
+testadas facilmente.
+c. Descrevem explicitamente as funcionalidades e serviços do
+sistema.
+d. Definem propriedades e restrições do sistema.
+e. Expressam informações relacionadas com a arquitetura do
+sistema.
+A regra 10 de Myers estima que o prejuízo causado por um defeito no
+sistema aumenta 10 vezes a cada etapa do processo de
+desenvolvimento que é avançado. Desta forma, é de extrema
+importância encontrar precocemente os defeitos antes que estes se
+tornem falhas e sejam visíveis para o cliente. Esta é uma função do
+segmento de qualidade de produto. Sobre qualidade de produto,
+analise as alternativas a seguir e assinale a alternativa CORRETA:
+Escolha uma opção:
+a. A realização de testes de software só é possível após o final do
+desenvolvimento do produto, isto porque é necessário que toda
+a funcionalidade tenha sido desenvolvida para poder testá-la.
+b. O teste exploratório deve ser sempre o primeiro teste a ser
+realizado, ainda durante o processo de desenvolvimento, pelo
+programador.
+c. O profissional que trabalha com qualidade de produto, também
+chamado de QP, tem, entre suas funções, que garantir que o\n---PAGE 12---\ndesenvolvimento do produto seja feito de acordo com uma
+metodologia, como, por exemplo, metodologia ágil Scrum.
+d. É parte da atribuição do segmento de qualidade de produto
+realizar junto com o cliente uma verificação antes da entrega do
+software para garantir que o software entregue está de acordo
+com o solicitado.
+e. A qualidade de produto não interfere na confiança do cliente,
+esta é uma responsabilidade burocrática aliada à qualidade de
+processos.
+O retorno de uma pesquisa na Internet foi:
+Critérios de escolha de ferramenta: eficácia, desempenho,
+simplicidade e fácil adaptabilidade. Pode ser utilizada para solucionar
+alguns problemas, tais como, registro de evolução de projeto,
+viabilização de trabalho em equipe e manutenção de variações do
+projeto. Ferramentas como Git, Subversion e Mercurial cumprem os
+requisitos da necessidade.
+A pesquisa era sobre qual tipo de ferramenta?
+Escolha uma opção:
+a. Governança de tecnologia de informação
+b. Gerenciamento e assinatura de documentos eletronicamente.
+c. Controle e gerenciamento de versão.
+d. Controle e gerenciamento de mudanças.
+e. Auditorias realizadas com base em workflow.
+Diferentes técnicas e ferramentas podem ser empregadas para estimar
+a duração das atividades de um projeto. Cada uma dessas técnicas tem
+características únicas.
+Considerando as características dessas técnicas, é correto afirmar que:\n---PAGE 13---\nEscolha uma opção:
+a. na opinião especializada, o gestor pode consultar uma pessoa
+com experiência na estimativa da duração de uma atividade.
+b. a estimativa de três pontos analisa os níveis mais inferiores de
+abstração até os mais altos na estimativa da duração.
+c. a estimativa bottom-up considera o tempo mais provável, o
+otimista e o pessimista de execução para estimar a duração.
+d. a estimativa análoga emprega softwares ou modelos
+matemáticos precisos para calcular a duração de uma atividade.
+e. usando a estimativa paramétrica, o gestor pesquisa projetos
+com atividades similares e considera seu tempo de execução.
+Escolha a melhor alternativa para adequação funcional.
+Escolha uma opção:
+a. Avalia o grau no qual o produto tem atributos que permitem que
+seja entendido, aprendido, usado e que seja atraente ao usuário,
+quando usado sob condições especificadas.
+b. Provê as ferramentas para a avaliação da qualidade de um
+sistema de software tanto por desenvolvedores, compradores ou
+avaliadores independentes.
+c. Mede o grau em que o produto disponibiliza funções que
+satisfazem necessidades estabelecidas e implicadas quando o
+produto é usado sob condições especificadas.
+d. A divisão contém o padrão para suportar a especificação de
+requisitos de qualidade, tanto para a fase de elicitação dos
+requisitos de qualidade do software quanto como entrada para o
+processo de avaliação da qualidade do software.
+e. O software, ao longo do tempo, se mantém com um
+comportamento consistente com o esperado.\n---PAGE 14---\nTodo projeto de criação de um software tem diversas fases de acordo
+com a metodologia escolhida.
+Leve em consideração uma empresa desenvolvedora de software que
+tem um processo de software composto pelas seguintes fases:
+Levantamento de Requisitos, Análise de Software, Projeto de
+Software, Codificação, Testes e Entrega do Software. Além disso, tem a
+cultura de estimar seus projetos utilizando Análise de Pontos por
+Função.
+Caso essa organização esteja interessada na criação de uma referência
+de estimativas de seus projetos, a contagem de pontos por função seria
+mais indicada em qual momento?
+Escolha uma opção:
+a. No início do projeto, para poder estimar a duração do projeto e
+elaborar um cronograma inicial, depois do detalhamento dos
+requisitos para refinar o cronograma e após o software ter sido
+concluído para, com base no tamanho real, recalcular a taxa
+média de produtividade da organização.
+b. Durante a etapa de Projeto de Software, pois já existe um grande
+entendimento dos requisitos e, como o software será
+desenvolvido em seguida, o valor da contagem obtido pode ser
+utilizado para estimar o tempo do projeto.
+c. Durante a etapa de Codificação, pois os desenvolvedores, por
+conhecerem o produto e a complexidade de implementar os
+requisitos, são os mais indicados, dentre os membros do grupo
+de desenvolvimento, para apontar o prazo para o término do
+projeto e de conclusão das atividades.
+d. Na etapa de Análise do Software, pois, dessa forma, o gerente de
+projetos poderá estimar o tempo restante do projeto com maior
+precisão e clareza se comparado a outras estratégias.\n---PAGE 15---\ne. No início do projeto, na fase de Levantamento de Requisitos,
+pois, assim, a equipe já deve ter diversos elementos para
+determinar o prazo de entrega do projeto e também de cada
+fase.
+Sobre as categorias de requisitos, avalie as três afirmações abaixo e
+selecione a alternativa correta:
+I) A forma de gerenciamento que deve ser utilizada ao desenvolver um
+software faz referência a um requisito de processo.
+II) Todos os requisitos de software da categoria produto são do tipo
+funcional, pois são funcionalidades implementadas.
+III) Todos os requisitos de software da categoria projeto são do tipo
+funcional, pois são funcionalidades implementadas.
+Escolha uma opção:
+a. Apenas a afirmativa I está correta.
+b. Apenas as afirmativas I e III estão corretas.
+c. Apenas as afirmativas II e III estão corretas.
+d. As alternativas I, II e III estão corretas.
+e. Apenas a afirmativa III está correta.
+Um dos grandes problemas que traz transtornos para as empresas
+desenvolvedoras de software é a presença de bugs no sistema. Isto
+porque eles afetam a satisfação do cliente com o sistema. Analise as
+alternativas a seguir e assinale a que define corretamente erro, defeito
+e falha:
+Escolha uma opção:
+a. Por causa da atitude errônea de João (que inseriu por engano
+uma função infinitamente recursiva no programa), quando Ana\n---PAGE 16---\nefetuou testes unitários no código fonte, ela identificou um
+defeito (uma linha defeituosa) no código.
+b. João é programador e inseriu por engano uma função
+infinitamente recursiva. João cometeu uma falha que pode
+prejudicar a empresa.
+c. Pedro estava fazendo um teste unitário no sistema e descobriu
+que Antônio cometeu uma falha, efetuou a declaração de uma
+variável com o tipo de dado errado.
+d. Lucas, usuário do sistema, deixou um campo em branco ao
+cadastrar um novo usuário para o sistema e fez com que o
+sistema travasse. Lucas estava diante de um erro de software.
+e. Juca é usuário do sistema e, ao cadastrar uma nova nota fiscal,
+deparou-se com um erro no software.
+A área de qualidade de software é a principal responsável por garantir
+a satisfação do cliente para com o software que foi entregue, desta
+forma, essa área se preocupa não apenas em entregar o software
+funcionando, mas em entregar o software em conformidade com os
+requisitos estabelecidos pelo cliente. Para ajudar nesse processo de
+garantia da qualidade, a área de qualidade de processos norteia a
+organização da estrutura de trabalho da empresa. Sobre qualidade de
+processos, analise a alternativa CORRETA:
+Escolha uma opção:
+a. A utilização de ciclo de desenvolvimento em cascata garante que
+a empresa irá atingir o nível máximo de maturidade no CMMI.
+b. CMMI e ISO9001 são modelos de maturidade que fornecem
+informações para os funcionários sobre como fazer o seu
+trabalho de forma eficiente.
+c. Um exemplo de processo que pode ser utilizado para garantia da
+qualidade de processos são as metodologias rápidas.\n---PAGE 17---\nd. O nível V do CMMI é o último nível de maturidade, ele considera
+que todos os processos já estão definidos e são seguidos pela
+empresa, estando em constante otimização.
+e. Um dos critérios para ser promovido em nível de maturidade é a
+comunicação eficiente e, por isso, o uso de metodologias ágeis
+é pré-requisito.
+O Constructive Cost Model (COCOMO) é um modelo utilizado para
+estimar projetos de software. Analise as opções a seguir e assinale a
+que corresponde ao modelo intermediário do COCOMO.
+Escolha uma opção:
+a. Tamanho das entradas externas, práticas de programação
+modernas e restrições de prazo.
+b. Tamanho da base de dados, uso de entradas externas e nível de
+aptidão dos gerentes.
+c. Tamanho das entradas externas, práticas de programação
+modernas e restrições de prazo.
+d. Tamanho das saídas externas, tamanho da base de dados e uso
+de práticas modernas.
+e. Práticas de programação modernas, tamanho da base de dados
+e nível de aptidão dos programadores.
+Pedro foi designado para implantar um novo processo de
+gerenciamento de requisitos na empresa onde ele trabalha. A
+motivação para isso é que, na última entrega que eles fizeram, um
+requisito que já estava corrigido voltou a apresentar os mesmos
+problemas anteriores.
+Considerando esse cenário, qual foi a atividade de gerenciamento de
+requisitos que falhou?
+Escolha uma opção:\n---PAGE 18---\na.
+Falhou a atividade de controle de versão.
+b. Falhou a atividade de rastreabilidade de requisitos
+c. Falhou a atividade de acompanhamento de status dos requisitos.
+d. Falhou a atividade de elicitação de requisitos.
+e. Falhou a atividade de análise de requisitos.
+O que é um requisito de software?
+Escolha uma opção:
+a. É uma técnica de desenvolvimento de software em que se utiliza
+camadas.
+b. É uma técnica para a medição de projetos de desenvolvimento
+de software, visando estabelecer uma medida de tamanho, em
+Pontos de Função (PF), considerando a funcionalidade
+implementada, sob o ponto de vista do usuário.
+c. É um conjunto de elementos que um software entrega, podendo
+ser dados ou valores.
+d. Um requisito pode ser definido como uma condição ou uma
+capacidade com a qual o sistema deve estar de acordo.
+e. É uma declaração sobre políticas ou condições que devem ser
+satisfeitas.
+Para definir a melhor técnica de estimativa de duração de atividades
+de um projeto, um gerente pode observar suas vantagens. Dentre as
+principais técnicas que podem ser escolhidas com esse critério, podem
+ser mencionadas a opinião especializada, a estimativa análoga, a
+estimativa paramétrica e a estimativa de três pontos.\n---PAGE 19---\nSobre as vantagens dessas técnicas, é correto afirmar que:
+Escolha uma opção:
+a. a estimativa de três pontos considera o impacto de diferentes
+fatores na estimativa de duração das atividades.
+b. a opinião especializada oferece como vantagem que o gestor
+possa decompor atividades em subatividades.
+c. a estimativa paramétrica permite que os gestores possam
+estimar rapidamente a duração das atividades.
+A estimativa de três pontos considera o impacto de diferentes
+fatores na estimativa de duração das atividades ao observar a
+duração mais provável, a otimista e a pessimista. A estimativa
+análoga permite que os gestores possam estimar rapidamente a
+duração das atividades. A bottom-up oferece como vantagem
+que o gestor possa decompor atividades em subatividades. A
+opinião especializada possibilita uma diminuição na curva de
+aprendizagem na estimativa de duração das atividades. A
+estimativa paramétrica permite maior precisão na estimativa de
+duração das atividades.
+d. a bottom-up possibilita uma diminuição na curva de
+aprendizagem na estimativa de duração das atividades.
+e. a estimativa análoga deve ser escolhida quando o gerente de
+projetos deseja ter uma mensuração realista.
+Escolha as alternativas referente a estimação da duração e número dos
+ciclos iterativos.
+Escolha uma ou mais:\n---PAGE 20---\na. Equipes com mais de 40 pessoas precisarão trabalhar em um
+ambiente muito mais formal e com mais documentação
+intermediária de forma que o fluxo de informação será
+naturalmente mais lento. Assim, neste caso, uma iteração de 3 a
+4 semanas seria mais recomendável.
+b. Equipes com mais de 40 pessoas precisarão trabalhar em um
+ambiente muito mais formal e com mais documentação
+intermediária de forma que o fluxo de informação será
+naturalmente mais lento. Desta forma, um ciclo de 6 a 8
+semanas seria recomendável neste caso.
+c. Equipes com mais de 20 pessoas precisarão de mais tempo para
+distribuir atividades e sincronizar as atividades, até porque a
+carga de trabalho naturalmente será bem maior. Além disso, a
+geração da release tomará mais tempo, pois haverá um volume
+maior de partes a serem integradas. Assim, neste caso, uma
+iteração de 3 a 4 semanas seria mais recomendável.
+d. Equipes com mais de 20 pessoas precisarão de mais tempo para
+distribuir atividades e sincronizar as atividades, até porque a
+carga de trabalho naturalmente será bem maior. Além disso, a
+geração da release tomará mais tempo, pois haverá um volume
+maior de partes a serem integradas. Desta forma, um ciclo de 6
+a 8 semanas seria recomendável neste caso.
+e. Equipes pequenas com até 5 pessoas poderão fazer o
+planejamento juntos numa manhã de segunda-feira, executar o
+trabalho ao longo da semana e gerar uma release na sexta.
+Uma importante ferramenta utilizada na gestão de projetos é a
+Planning Poker. Sobre ela, analise as afirmativas a seguir:
+I. É um método que privilegia a opinião do "jogador" ganhador em
+detrimento da opinião dos demais.\n---PAGE 21---\nII. O "jogo" é composto por cartas com números que representam
+esforço estimado.
+III. O "jogo" tem 356 cartas.
+IV. Há uma forte interação entre os "jogadores" e product owners, que
+discutem questões do projeto antes de realizarem suas jogadas.
+Estão corretas as afirmativas:
+Escolha uma opção:
+a. III e IV.
+b. I e II.
+c. II e IV
+d. I e IV.
+e. I e III
+Assinale a alternativa que corresponde ao objetivo principal da
+Análise de Pontos de Função:
+Escolha uma opção:
+a. Medir a funcionalidade de um software ou aplicativo.
+b. Medir a oportunidade qualitativa de um software ou aplicativo.
+c. Medir a funcionalidade dos pontos de acesso à
+operacionalização de um software ou aplicativo.
+d. Verificar a fundamentação da funcionalidade de um software ou
+aplicativo.
+e. Simplificar a complexidade funcional de um software ou
+aplicativo.\n---PAGE 22---\nA gerência de configuração de software está diretamente ligada à
+baseline, na qual são criados os marcos de versionamento de artefatos.
+Diante dessa afirmação, assinale a alternativa correta em relação às
+características :
+Escolha uma opção:
+a. Trata-se de um repositório de itens de configuração com controle
+de acesso, no qual são armazenados os itens de configuração.
+b. É um local sob controle de acesso que armazena os relatórios e
+as mudanças solicitadas pelo cliente.
+c. Ajuda a controlar as mudanças sem impedir seriamente as
+mudanças justificáveis.
+d. É o método utilizado para trabalhar com itens de configuração
+que já estão no repositório.
+e. Realiza uma seleção de itens a serem revisados para entender a
+sua relevância.
+Escolha a melhor alternativa para confiabilidade.
+Escolha uma opção:
+a. O software, ao longo do tempo, se mantém com um
+comportamento consistente com o esperado.
+b. Avalia o grau no qual o produto tem atributos que permitem que
+seja entendido, aprendido, usado e que seja atraente ao usuário,
+quando usado sob condições especificadas.
+c. A divisão contém o padrão para suportar a especificação de
+requisitos de qualidade, tanto para a fase de eliciação dos
+requisitos de qualidade do software quanto como entrada para o
+processo de avaliação da qualidade do software.\n---PAGE 23---\nd. Mede o grau em que o produto disponibiliza funções que
+satisfazem necessidades estabelecidas e implicadas quando o
+produto é usado sob condições especificadas.
+e. Provê as ferramentas para a avaliação da qualidade de um
+sistema de software tanto por desenvolvedores, compradores ou
+avaliadores independentes.
+Qual é a característica de um requisito não funcional?
+Escolha uma opção:
+a. É um tipo de requisito fácil de estimar.
+b. É um tipo de requisito que define propriedades e restrições do
+sistema. É mais voltado para características que podem ser
+mensuradas e testadas facilmente.
+c.
+É um tipo de requisito que é flexível e não impacta no
+desenvolvimento.
+d. É um tipo de requisito que o usuário geralmente conhece bem.
+e. É um tipo de requisito que geralmente descreve explicitamente
+as funcionalidades e serviços do sistema.
+Além de observar as vantagens, um gerente de projetos pode
+considerar o contexto e as situações de um projeto para escolher a
+melhor técnica de estimativa de duração das atividades. Seguindo essa
+perspectiva, o gestor poderia encontrar subsídios para empregar
+técnicas como reuniões, tomada de decisão, análise de reservas,
+análise de alternativas e estimativa análoga.
+Considerando a relação entre o contexto do projeto e a técnica de
+estimativa recomendada, é correto afirmar que:
+Escolha uma opção:\n---PAGE 24---\na. a estimativa análoga pode ser empregada quando a instituição
+tem um repositório sobre a duração de atividades similares às
+do projeto.
+b. a técnica de reuniões envolvendo os clientes e os membros da
+equipe é recomendada quando existem divergências sobre as
+estimativas de duração.
+c. a análise de alternativas é recomendada quando o gerente de
+projetos precisa solicitar a colaboração da equipe e informar
+suas decisões.
+d. a técnica de tomada de decisão surte melhores efeitos quando
+existem riscos aceitos no projeto que podem demandar
+recursos.
+e. a técnica de análise de reservas deve ser empregada quando
+surgem situações relacionadas com a compressão do
+cronograma.
+Além de observar as vantagens, um gerente de projetos pode
+considerar o contexto e as situações de um projeto para escolher a
+melhor técnica de estimativa de duração das atividades. Seguindo essa
+perspectiva, o gestor poderia encontrar subsídios para empregar
+técnicas como reuniões, tomada de decisão, análise de reservas,
+análise de alternativas e estimativa análoga.
+Considerando a relação entre o contexto do projeto e a técnica de
+estimativa recomendada, é correto afirmar que:
+Escolha uma opção:
+a. a estimativa análoga pode ser empregada quando a instituição
+tem um repositório sobre a duração de atividades similares às
+do projeto.\n---PAGE 25---\nb. a técnica de reuniões envolvendo os clientes e os membros da
+equipe é recomendada quando existem divergências sobre as
+estimativas de duração.
+c. a análise de alternativas é recomendada quando o gerente de
+projetos precisa solicitar a colaboração da equipe e informar
+suas decisões.
+d. a técnica de tomada de decisão surte melhores efeitos quando
+existem riscos aceitos no projeto que podem demandar
+recursos.
+e. a técnica de análise de reservas deve ser empregada quando
+surgem situações relacionadas com a compressão do
+cronograma.
+Na engenharia de software, existe um processo genérico de
+levantamento e análise que contém as seguintes atividades:
+compreensão do domínio, coleta de requisitos, classificação, resolução
+de conflitos, definição das prioridades e verificação de requisitos. Uma
+das atividades mais importantes deste processo é a coleta de
+requisitos. Informe quais das descrições a seguir melhor descrevem
+esta atividade:
+Escolha uma opção:
+a. Quando múltiplos stakeholders estão envolvidos, os requisitos
+apresentarão conflitos. Essa atividade tem por objetivo
+solucionar esses conflitos.
+b. Nesta atividade, os requisitos são verificados para descobrir se
+estão completos e consistentes e se estão em concordância
+com o que os stakeholders desejam do sistema.
+c. É o processo de interagir com os stakeholders do sistema para
+descobrir seus requisitos.
+d. Essa atividade considera o conjunto não estruturado dos
+requisitos e os organiza em grupos coerentes.\n---PAGE 26---\ne. Em qualquer definição de requisitos, alguns serão mais
+importantes do que outros. Esse estágio envolve interação com
+os stakeholders para a definição dos requisitos mais
+importantes.
+Analise as afirmativas abaixo e assinale a alternativa que corresponde
+às principais características do CMMI.
+Escolha uma opção:
+a. Adaptado para a realidade das empresas de desenvolvimento de
+software brasileiras.
+b. Avaliar a qualidade do processo por meio da sua classificação
+em 6 níveis globais de maturidade.
+c. Ter como subproduto a pontuação IFPUG do software avaliado.
+d. Avaliar a qualidade do processo a partir da avaliação do nível de
+maturidade de diversas categorias contidas nele.
+e. Ser mais restrito que seu antecessor, CMM, estando confinado
+apenas à avaliação de processos relativos à engenharia de
+software.
+No que diz respeito à avaliação de qualidade de software, o conceito de
+corretude é:
+Escolha uma opção:
+a. O esforço para aprender um programa, operá-lo, preparar a
+entrada e interpretar a saída dos dados.
+b. O esforço exigido para modificar um programa operacional.
+c. O esforço exigido para localizar e reparar erros em um programa.
+d. A medida com que um programa satisfaz sua especificação e
+cumpre os objetivos visados pelo cliente.\n---PAGE 27---\ne. A quantidade de recursos de computação e de código exigidos
+para que um programa execute a sua função.
+As ferramentas de GCS automatizam várias atividades do processo de
+mudança, como, por exemplo, o versionamento de código, o
+empacotamento e a distribuição do software, documentos, entre
+outros itens de configuração. Todas as ferramentas de GCS existentes,
+tanto de código aberto quanto proprietárias, suprem todas as
+necessidades de quaisquer tipos de projetos? Qual a justificativa para
+tal resposta?
+Escolha uma opção:
+a. Não. Somente ferramentas customizadas de acordo com
+metodologias de GCS conseguem dar o devido suporte, pois são
+construídas para suprir todas as atividades do processo de
+desenvolvimento.
+b. Não. Muitas empresas optam por desenvolver ferramentas totais
+ou complementares porque não conseguem alinhar a
+automação do processo de GCS somente com ferramentas
+existentes (código aberto ou pagas).
+c. Sim. Todas as ferramentas de GCS existentes conseguem
+automatizar exatamente todas as necessidades do processo de
+qualquer tipo de projeto ou empresa, conseguindo otimizar
+todas as atividades.
+d. Sim. Todas as ferramentas existentes, tanto de código aberto
+quanto proprietárias, têm características que podem ser
+estudadas e alinhadas a qualquer tipo de projeto.
+e. Não. Somente as ferramentas proprietárias conseguem
+automatizar exatamente todas as necessidades do processo de
+qualquer tipo de projeto, devido ao custo de desenvolvimento de
+tais ferramentas.
+Uma das principais medidas do sucesso de um software é o grau no
+qual ele atende aos objetivos e requisitos para os quais foi construído.\n---PAGE 28---\nDe forma geral, a engenharia de requisitos de software é o processo de
+identificar todos os envolvidos, descobrir seus objetivos e
+necessidades e documentá-los de forma apropriada para análise,
+comunicação e posterior implementação. Com relação à engenharia de
+requisitos de software, analise as seguintes afirmativas:
+I) As descrições das funções que um sistema deve incorporar e das
+restrições que devem ser satisfeitas constituem os requisitos para o
+sistema.
+II) Requisitos funcionais descrevem restrições sobre as funções
+oferecidas, tais como restrições de tempo e de uso de recursos.
+III) Os requisitos não funcionais apontam as funções que o sistema
+deve fornecer e como o sistema deve se comportar em determinadas
+situações.
+Escolha uma opção:
+a. As alternativas II e III estão corretas.
+b. As alternativas I e III estão corretas
+c. Apenas a alternativa II está correta.
+d. As alternativas I, II e III estão corretas.
+e. Apenas a alternativa I está correta.
+A estimativa da duração das atividades de um projeto também pode
+ser feita por análise de alternativas, análise de reservas, tomada de
+decisão e reuniões. Essas técnicas e ferramentas apresentam
+características importantes que devem ser claramente compreendidas
+pelo gerente de projetos.
+Sobre as características dessas técnicas, é correto afirmar que:
+Escolha uma opção:\n---PAGE 29---\na. a análise de alternativas permite especificar o tempo extra
+reservado para riscos aceitos ou situações inusitadas.
+b. a análise de reservas possibilita ao gestor uma visão holística na
+estimativa da duração das atividades do projeto.
+c. o resultado das reuniões consiste em um backlog que resume as
+premissas e os riscos da duração das atividades.
+d. a técnica de tomada de decisão é realizada no início do projeto e
+conta com a presença do proprietário do produto.
+e. o punho de cinco consiste em uma prática recomendada para
+ser combinada com a técnica de análise de alternativas.
+O gerenciamento de requisitos prevê que sejam controladas as
+mudanças nos requisitos. Considerando o papel exercido pelo Comitê
+de Controle de Mudanças (CCM), assinale a alternativa correta:
+Escolha uma opção:
+a. O CCM prevê papéis fixos que as empresas devem designar para
+sua composição.
+b. No ambiente ágil a rastreabilidade já acontece automaticamente.
+c. O ambiente ágil não pode ter o CCM porque todas as mudanças
+nos requisitos são aprovadas.
+d.
+O CCM precisa de muitas pessoas para funcionar, o que dificulta
+sua implantação em pequenas empresas.
+e. O CCM pode ser usado em qualquer tipo de empresa.
+Há um número grande de ferramentas de GCS existentes, além de
+outras que são desenvolvidas para serem mais adequadas à
+complexidade do processo de GCS das empresas e dos projetos.
+Pensando nisso, quando uma empresa opta por ferramentas de GCS
+existentes, é aconselhável que adote no máximo quantas?\n---PAGE 30---\nEscolha uma opção:
+a. Nunca mais de três ferramentas de GCS, para que se possa ter
+uma gestão menos burocrática e mais efetiva.
+b. Não há número máximo de ferramentas a serem utilizadas. O
+importante é que todas as ferramentas adotadas possam ser
+integradas.
+c. Quando for necessário utilizar mais do que três ferramentas
+existentes, aconselha-se que seja desenvolvida internamente a
+ferramenta de GCS.
+d. O ideal é que se adotem, no máximo, sete ferramentas de GCS
+que tenham alguma forma de integração.
+e. Tudo dependerá do orçamento previsto para a adoção das
+ferramentas de GCS, observando-se, no máximo, nove
+ferramentas diferentes.
+O gerenciamento de requisitos tem a missão de zelar para que os
+requisitos estejam íntegros e para que a visão disponibilizada seja
+atual, permitindo que análises de impacto de solicitações de mudança
+sejam realizadas com confiança. Quando uma equipe recebe uma
+solicitação de mudanças, quais são os itens que ela deveria utilizar
+para analisar o impacto?
+I. A matriz de rastreabilidade bidirecional dos requisitos.
+II. O código implementado no repositório de códigos.
+III. O status atual dos requisitos.
+IV. Os atributos definidos para os requisitos.
+Escolha uma opção:
+a. Apenas a alternativa I está correta.\n---PAGE 31---\nb. Apenas a afirmativa II está correta.
+c. Estão corretas as afirmativas I, II e III.
+d. Estão corretas as afirmativas I, III e IV.
+e. Estão corretas as afirmativas I, II, III e IV.
+Escolha as alternativas referente a Declaração de Escopo.
+Escolha uma ou mais:
+a. Requisitos de alto nível que satisfazem os principais
+interessados.
+b. Descrição em alto nível do projeto.
+c. Inicialmente o planejador de um projeto deve estabelecer quais
+são os objetivos finais do projeto.
+d. Sem definir claramente onde o projeto vai chegar é muito difícil
+estabelecer um bom plano.
+e. O objetivo de um projeto (e também das iterações) deve ser
+sempre um conjunto de artefatos.
+Escolha as alternativas referente ao pmbok.
+Escolha uma ou mais:
+a. É uma coleção de projetos e/ou programas e outros trabalhos
+que são agrupados para facilitar o gerenciamento efetivo do
+trabalho necessário para alcançar os objetivos estratégicos do
+negócio.
+b. Conjunto de Conhecimentos em Gerenciamento de Projetos.
+c. É a soma dos conhecimentos, técnicas e ferramentas intrínsecas
+à profissão de gerenciamento de projetos e pertence ao
+conjunto de profissionais e acadêmicos que o aplicam e
+desenvolvem.\n---PAGE 32---\nd. É um grupo de projetos relacionados gerenciados de forma
+coordenada para obter benefícios e controles não disponíveis
+quando gerenciados de forma individual.
+e. É um conjunto de projetos ou programas e outros trabalhos
+agrupados para facilitar o gerenciamento eficaz desse trabalho a
+fim de atender aos objetivos de negócios estratégico
+Manter o controle das múltiplas versões de componentes do sistema e
+assegurar que as alterações feitas aos componentes por diferentes
+desenvolvedores não interfiram umas com as outras. Pode-se
+compreender que esse conceito está relacionado ao:
+Escolha uma opção:
+a. Gerenciamento de verificações
+b. Gerenciamento de mudanças.
+c. Gerenciamento de acesso.
+d. Gerenciamento de releases.
+e. Gerenciamento de versões.
+Realize as associações referente aos elementos de uma declaração de
+escopo.
+● Define-se o processo e critérios para que Resposta 1
+o produto, como um todo, seja aceito e o
+Escolher...Princip
+projeto finalizado.
+ais entregas do
+projeto.Descrição
+do produto do
+projeto.Critérios
+de aceitação do
+produto.\n---PAGE 33---\n● Devem ser definidas as principais Resposta 2
+entregas do projeto, ou seja, os
+Escolher...Princip
+momentos em que o cliente estará
+ais entregas do
+recebendo algum tipo de deliverable dos
+projeto.Descrição
+desenvolvedores.
+do produto do
+● Normalmente trata-se de versões
+projeto.Critérios
+implementadas do sistema, mas essa
+de aceitação do
+lista poderá incluir também outros itens
+produto.
+como projeto, manuais, discos de
+instalação, treinamento, etc.
+● Embora o termo de abertura já contenha Resposta 3
+uma definição do produto em alto nível, a
+Escolher...Princip
+declaração de escopo deverá refinar esta
+ais entregas do
+descrição.
+projeto.Descrição
+do produto do
+projeto.Critérios
+de aceitação do
+produto.
+O gerenciamento de configuração de software (GCS) é uma área que
+atua em conjunto com todo o ciclo de desenvolvimento de software.
+Ou seja, todas as etapas do desenvolvimento estão cobertas pelo GCS.
+Mas há um processo que recebe mais informações e resultados
+provenientes do GCS. Qual é esse processo dentro do ciclo de vida do
+desenvolvimento de software?
+Escolha uma opção:
+a. O GCS serve como base para a adoção de ferramentas de
+infraestrutura.\n---PAGE 34---\nb. O GCS alicerça, em especial, a fase de empacotamento e entrega
+do software.
+c. O GCS serve de alicerce principalmente para o processo de
+requisitos.
+d. O GCS gera excelente alinhamento com o planejamento do
+projeto.
+e. O GCS alicerça, em especial, o processo de gerência de
+qualidade de software.
+Limpar minha escolha
+COCOMO é uma técnica para estimar software, a qual permite
+calcular, a partir de estimativas de tamanho deste, valores para:
+Escolha uma opção:
+a. tempo e custo totais de desenvolvimento.
+b. esforço e custo total de desenvolvimento
+c. esforço e quantidade de pontos de função do sistema.
+d. esforço e tempo de desenvolvimento.
+e. tempo de desenvolvimento e quantidade de pontos de função do
+sistema.
+A estrutura analítica da iteração (Work Breakdown Structure - WBS) é
+uma estrutura que apresenta as atividades que devem ser executadas
+para atingir os objetivos determinados. Escolha as alternativas
+referente ao WBS.
+Escolha uma ou mais:
+a. É uma estrutura exaustiva, ou seja, ela deve incluir todas as
+atividades necessárias para a execução do projeto ou iteração.\n---PAGE 35---\nb. Poderá ser estruturada com uma árvore, sendo que atividades
+podem ser aglutinadas ou detalhadas e estabelecendo uma
+árvore de decomposição entre elas.
+c. É muito importante que o planejador do projeto planeje artefatos
+de saída e não meramente ações.
+d. Se for usado um ciclo de vida prescritivo, os workflows vão
+indicar quais as atividades a serem executadas e quais as
+dependências entre elas.
+e. Se for usado um método ágil, recomenda-se que a equipe decida
+sobre as atividades a serem desenvolvidas.
+Escolha as alternativas referente ao termo de abertura (project
+charter).
+Escolha uma ou mais:
+a. Descrição em alto nível do projeto.
+b. Objetivo e justificativa do projeto.
+c. Sem definir claramente onde o projeto vai chegar é muito difícil
+estabelecer um bom plano.
+d. Requisitos de alto nível que satisfazem os principais
+interessados.
+e. Definição dos papeis e responsabilidades das partes
+interessadas.
+Escolha a melhor alternativa para requisitos de qualidade.
+Escolha uma opção:
+a. O software, ao longo do tempo, se mantém com um
+comportamento consistente com o esperado.\n---PAGE 36---\nb. Provê as ferramentas para a avaliação da qualidade de um
+sistema de software tanto por desenvolvedores, compradores ou
+avaliadores independentes.
+c. Avalia o grau no qual o produto tem atributos que permitem que
+seja entendido, aprendido, usado e que seja atraente ao usuário,
+quando usado sob condições especificadas.
+d. Mede o grau em que o produto disponibiliza funções que
+satisfazem necessidades estabelecidas e implicadas quando o
+produto é usado sob condições especificadas.
+e. A divisão contém o padrão para suportar a especificação de
+requisitos de qualidade, tanto para a fase de elicitação dos
+requisitos de qualidade do software quanto como entrada para o
+processo de avaliação da qualidade do software.
+O gerenciamento de requisitos é representado por um conjunto de
+atividades que são utilizadas para gerenciar o requisito ao longo de
+toda a sua vida, o que inclui o desenvolvimento e a manutenção de
+software.
+Assinale a alternativa que contém apenas grupos de atividades
+relacionadas ao gerenciamento de requisitos:
+Escolha uma opção:
+a. Verificação, rastreabilidade, acompanhamento do status.
+b. Elicitação, rastreabilidade, controle de status.
+c. Controle de versão, acompanhamento do status, verificação.
+d. Elicitação, controle de versões, controle de mudanças
+e.
+Acompanhamento do status, controle de versão, controle de
+mudanças.\n---PAGE 37---\nOs modelos CMMI e MPS-BR têm por objetivo auxiliar as empresas
+na organização de seus processos e avaliar a maturidade a qual os
+processos das empresas se encontram. Sobre estes dois modelos,
+assinale a alternativa CORRETA:
+Escolha uma opção:
+a. O modelo CMMI é utilizado apenas dentro do Brasil, embora
+tenha sido criado fora.
+b. Pode-se dizer que uma empresa que utiliza métodos ágeis de
+desenvolvimento de sistemas é automaticamente mais madura
+do que uma empresa que utiliza métodos tradicionais.
+c. O modelo MPS-BR pode ser considerado uma extensão do CMMI,
+uma vez que ele replica os níveis do CMMI complementando os
+níveis intermediários.
+d. Processo largamente definido é um nível de maturidade do
+modelo CMMI.
+e. Tanto o CMMI quando o MPS-BR são ferramentas para
+organização de processos empresariais.
+A configuração de software/sistema trata-se de uma coleção que
+contém versões definidas de itens de configuração de acordo com
+desenvolvimentos específicos para uma finalidade particular. Durante
+o processo de desenvolvimento de software, o gerenciamento da
+configuração de software identifica a sua configuração:
+Escolha uma opção:
+a. Somente ao final do ciclo de vida do software
+b. Apenas uma ou duas vezes, no máximo, antes de encerrar o ciclo
+de vida do software.
+c. Apenas no início do ciclo de vida do software
+d. Antes de iniciar o ciclo de vida do software.\n---PAGE 38---\ne. Em pontos predefinidos durante o ciclo de vida do software.
+As mudanças no que diz respeito ao desenvolvimento de sistemas/
+softwares são constantes, geralmente, porque as necessidades dos
+solicitantes e usuários mudam. Dentre os fatores na análise de
+mudança, pode-se citar:
+Escolha uma opção:
+a. Análise de implementação.
+b. Gerenciamento de acesso.
+c. Ciclo de release do software.
+d. Análise de configuração.
+e. Auditorias de software.
+Escolha as alternativas referente ao que é um projeto?
+Escolha uma ou mais:
+a. é um grupo de projetos relacionados gerenciados de forma
+coordenada para obter benefícios e controles não disponíveis
+quando gerenciados de forma individual.
+b. é um esforço temporário empreendido para criar um produto,
+serviço ou resultado exclusivo.
+c. alguma
+cria entregas exclusivas, que são produtos, serviços ou resultados que são de
+forma diferente de todos os outros produtos ou serviços
+semelhantes já realizados.
+d. é uma coleção de projetos e/ou programas e outros trabalhos
+que são agrupados para facilitar o gerenciamento efetivo do
+trabalho necessário para alcançar os objetivos estratégicos do
+negócio.\n---PAGE 39---\ne. é um conjunto de projetos ou programas e outros trabalhos
+agrupados para facilitar o gerenciamento eficaz desse trabalho a
+fim de atender aos objetivos de negócios estratégico
+Na engenharia de software, quando se fala em satisfação de requisitos,
+normas de desenvolvimento documentadas e satisfação dos clientes
+quanto à entrega do que foi esperado, trata-se de:
+Escolha uma opção:
+a. Teste de software.
+b. Engenharia de software.
+c. Métricas de software.
+d. Qualidade de software.
+e. Análise de software.
+O modelo de qualidade apresenta as características e
+subcaracterísticas de qualidade interna, externa e de uso. Agora
+realize as associações referente ao que o documento inclui.
+● um conjunto de medições básicas Resposta 1
+usadas para a definição das demais.
+Escolher...Medidas
+InternasModelo de
+referência e guia de
+mediçãoMedidas
+Primitivas
+● que apresenta uma introdução e Resposta 2
+explicação sobre a aplicação das
+Escolher...Medidas
+medidas de qualidade.
+InternasModelo de
+referência e guia de\n---PAGE 40---\nmediçãoMedidas
+Primitivas
+● O conjunto de medidas quantitativas
+em termos de características e
+subcaracterísticas internas.
+Realize as associações referente as três dimensões: portfólio,
+programa e projeto.
+● é um empreendimento temporário que cria um Respo
+produto, serviço ou resultado único. sta 1
+Escolh
+er...por
+tfóliop
+rojeto
+progra
+ma
+● é um conjunto de projetos ou programas e outros Respo
+trabalhos agrupados para facilitar o gerenciamento sta 2
+eficaz desse trabalho a fim de atender aos objetivos
+Escolh
+de negócios estratégico
+er...por
+tfóliop
+rojeto
+progra
+ma
+● é um grupo de projetos relacionados gerenciados de
+forma coordenada para obter benefícios e controles\n---PAGE 41---\nnão disponíveis quando gerenciados de forma
+individual.
+A técnica UCP (Use Case Points) estima o tamanho do software em
+pontos de caso de uso e esforço. Sobre a UCP, assinale a resposta
+correta:
+Escolha uma opção:
+a. O quantitativo de atores e a sua complexidade devem ser
+considerados para a aplicação dessa métrica.
+b. Aos pontos de caso de uso, determinados a partir dos dados de
+atores e suas complexidades, aplicam-se fatores de
+complexidade ambiental e fatores técnicos de complexidade.
+c. Os fatores de complexidade ambiental aplicados nos pontos de
+caso de uso englobam aspectos como motivação, facilidade de
+uso, facilidade para alterar e eficiência do usuário final.
+d. Para utilizar a referida métrica, é necessário que a organização
+tenha um único padrão e estilo para escrever casos de uso.
+e. Nos pontos de caso de uso, aplicam-se fatores de complexidade
+técnicos que englobam distribuição do sistema, reutilização do
+código, features de segurança, complexidade do processo
+interno e dificuldade de programação na linguagem.
+As ferramentas que automatizam os processos de GCS estão divididas
+em subáreas. Cada subárea apresenta atividades que estabelecem o
+controle de versões, de avaliação de conformidade dos produtos, das
+definições e uso de ferramentas, entre outras tantas atividades. Quais
+são as principais atividades da subárea de gestão de versões e
+distribuição?
+Escolha uma opção:\n---PAGE 42---\na. A gestão de controle de versões e distribuição testa a versão
+final dos códigos antes da distribuição, bem como aponta suas
+possíveis falhas.
+b. A gestão de controle de versões e distribuição controla a
+correção de defeitos e erros durante o processo de
+desenvolvimento de software.
+c. A gestão de controle de versões e distribuição é responsável
+pelos testes dos códigos e correção de erros.
+d. A gestão de controle de versões e distribuição é responsável
+pela conformidade dos códigos e sua regulamentação.
+e. A gestão de controle de versões e distribuição garante o controle
+das versões do código, bem como o empacotamento e a
+implantação dos aplicativos.

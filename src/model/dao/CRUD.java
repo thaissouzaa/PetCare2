@@ -41,6 +41,16 @@ public class CRUD implements IUsuarioDAO, IServicoDAO, IAgendaDAO, IClienteDAO {
         catch (SQLException e) { e.printStackTrace(); return false; }
     }
 
+    public String BuscarNomeUsuario(Usuario usuario) {
+        String SQL = "SELECT P.NOME FROM USUARIO U JOIN PESSOA P ON P.CODIGO = U.CODIGOPESSOA " +
+                "WHERE (P.CPF = '" + textoSql(usuario.getLogin()) + "' OR P.EMAIL = '" + textoSql(usuario.getLogin()) + "') " +
+                "AND U.SENHA = '" + textoSql(usuario.getSenha()) + "' AND U.INDICADORATIVO = 1";
+        try {
+            ResultSet resultado = s.executeQuery(SQL);
+            return resultado.next() ? resultado.getString("NOME") : "";
+        } catch (SQLException e) { e.printStackTrace(); return ""; }
+    }
+
     public Boolean Usuariomaster(Usuario usuario) {
         String SQL = "SELECT USUARIO.INDICADORMASTER FROM USUARIO JOIN PESSOA ON PESSOA.CODIGO = USUARIO.CODIGOPESSOA " +
                 "WHERE (PESSOA.CPF = '" + textoSql(usuario.getLogin()) + "' OR PESSOA.EMAIL = '" + textoSql(usuario.getLogin()) + "') " +
@@ -82,6 +92,73 @@ public class CRUD implements IUsuarioDAO, IServicoDAO, IAgendaDAO, IClienteDAO {
                 servico.setValor(r.getString("VALOR"));
                 lista.add(servico);
             }
+        } catch (SQLException e) { e.printStackTrace(); }
+        return lista;
+    }
+
+    public ArrayList<Plano> SelecionarPlanos() {
+        ArrayList<Plano> lista = new ArrayList<>();
+        try {
+            ResultSet r = s.executeQuery("SELECT CODIGO, NOME, RECORRENCIA FROM PLANO WHERE INDICADORATIVO = 1 ORDER BY NOME");
+            while (r.next()) lista.add(new Plano(r.getInt("CODIGO"), r.getString("NOME"), r.getString("RECORRENCIA")));
+        } catch (SQLException e) { e.printStackTrace(); }
+        return lista;
+    }
+
+    public boolean InserirPlano(Plano plano) {
+        String SQL = "INSERT INTO PLANO (NOME, RECORRENCIA, INDICADORATIVO) VALUES ('" + textoSql(plano.getNome()) + "', '" +
+                textoSql(plano.getRecorrencia()) + "', 1)";
+        try { return s.executeUpdate(SQL) > 0; }
+        catch (SQLException e) { e.printStackTrace(); return false; }
+    }
+
+    public boolean AtualizarPlano(Plano plano) {
+        String SQL = "UPDATE PLANO SET NOME = '" + textoSql(plano.getNome()) + "', RECORRENCIA = '" + textoSql(plano.getRecorrencia()) +
+                "' WHERE CODIGO = " + plano.getCodigo() + " AND INDICADORATIVO = 1";
+        try { return s.executeUpdate(SQL) > 0; }
+        catch (SQLException e) { e.printStackTrace(); return false; }
+    }
+
+    public boolean DesativarPlano(int codigo) {
+        try { return s.executeUpdate("UPDATE PLANO SET INDICADORATIVO = 0 WHERE CODIGO = " + codigo + " AND INDICADORATIVO = 1") > 0; }
+        catch (SQLException e) { e.printStackTrace(); return false; }
+    }
+
+    public boolean AssociarPlanoPessoa(int codigoPessoa, Integer codigoPlano) {
+        String plano = codigoPlano == null ? "NULL" : String.valueOf(codigoPlano);
+        try { return s.executeUpdate("UPDATE PESSOA SET CODIGOPLANO = " + plano + " WHERE CODIGO = " + codigoPessoa) > 0; }
+        catch (SQLException e) { e.printStackTrace(); return false; }
+    }
+
+    public Plano SelecionarPlanoPessoa(String login) {
+        String SQL = "SELECT PL.CODIGO, PL.NOME, PL.RECORRENCIA FROM PESSOA P JOIN PLANO PL ON PL.CODIGO = P.CODIGOPLANO " +
+                "WHERE (P.CPF = '" + textoSql(login) + "' OR P.EMAIL = '" + textoSql(login) + "') AND PL.INDICADORATIVO = 1";
+        try {
+            ResultSet r = s.executeQuery(SQL);
+            return r.next() ? new Plano(r.getInt("CODIGO"), r.getString("NOME"), r.getString("RECORRENCIA")) : null;
+        } catch (SQLException e) { e.printStackTrace(); return null; }
+    }
+
+    public Plano SelecionarPlanoPessoa(int codigoPessoa) {
+        String SQL = "SELECT PL.CODIGO, PL.NOME, PL.RECORRENCIA FROM PESSOA P JOIN PLANO PL ON PL.CODIGO = P.CODIGOPLANO " +
+                "WHERE P.CODIGO = " + codigoPessoa;
+        try {
+            ResultSet r = s.executeQuery(SQL);
+            return r.next() ? new Plano(r.getInt("CODIGO"), r.getString("NOME"), r.getString("RECORRENCIA")) : null;
+        } catch (SQLException e) { e.printStackTrace(); return null; }
+    }
+
+    public ArrayList<String> SelecionarResumoServicosAgendados() {
+        ArrayList<String> lista = new ArrayList<>();
+        String SQL = "SELECT S.NOME AS SERVICO, COUNT(DISTINCT A.CODIGO) AS TOTAL, " +
+                "COUNT(DISTINCT CASE WHEN A.INDICADORATIVO = 1 THEN A.CODIGO END) AS CONFIRMADOS, " +
+                "COUNT(DISTINCT CASE WHEN A.INDICADORATIVO = 0 THEN A.CODIGO END) AS PENDENTES " +
+                "FROM AGENDA A JOIN SERVICOAGENDA SA ON SA.CODIGOAGENDA = A.CODIGO " +
+                "JOIN SERVICO S ON S.CODIGO = SA.CODIGOSERVICO GROUP BY S.CODIGO, S.NOME ORDER BY S.NOME";
+        try {
+            ResultSet r = s.executeQuery(SQL);
+            while (r.next()) lista.add(r.getString("SERVICO") + "\t" + r.getInt("TOTAL") + "\t" +
+                    r.getInt("CONFIRMADOS") + "\t" + r.getInt("PENDENTES"));
         } catch (SQLException e) { e.printStackTrace(); }
         return lista;
     }
@@ -138,15 +215,21 @@ public class CRUD implements IUsuarioDAO, IServicoDAO, IAgendaDAO, IClienteDAO {
     }
 
     public boolean InserirAgendamento(String login, String inicio, int codigoServico) {
+        try {
+            ResultSet pessoa = s.executeQuery("SELECT CODIGO FROM PESSOA WHERE CPF = '" + textoSql(login) + "' OR EMAIL = '" + textoSql(login) + "'");
+            return pessoa.next() && InserirAgendamentoPessoa(pessoa.getInt("CODIGO"), inicio, codigoServico, false);
+        } catch (SQLException e) { e.printStackTrace(); return false; }
+    }
+
+    public boolean InserirAgendamentoPessoa(int codigoPessoa, String inicio, int codigoServico, boolean confirmar) {
         java.sql.Connection conexao = null;
         boolean autoCommitAnterior = true;
         try {
             conexao = s.getConnection();
             autoCommitAnterior = conexao.getAutoCommit();
             conexao.setAutoCommit(false);
-            ResultSet pessoa = s.executeQuery("SELECT CODIGO FROM PESSOA WHERE CPF = '" + textoSql(login) + "' OR EMAIL = '" + textoSql(login) + "'");
+            ResultSet pessoa = s.executeQuery("SELECT CODIGO FROM PESSOA WHERE CODIGO = " + codigoPessoa + " AND INDICADORATIVO = 1");
             if (!pessoa.next()) { conexao.rollback(); return false; }
-            int codigoPessoa = pessoa.getInt("CODIGO");
             ResultSet servico = s.executeQuery("SELECT DURACAO FROM SERVICO WHERE CODIGO = " + codigoServico + " AND INDICADORATIVO = 1");
             if (!servico.next()) { conexao.rollback(); return false; }
             int duracao = servico.getInt("DURACAO");
@@ -157,7 +240,7 @@ public class CRUD implements IUsuarioDAO, IServicoDAO, IAgendaDAO, IClienteDAO {
             String inicioBanco = dataHoraInicio.format(formatoBanco);
             String fimBanco = dataHoraFinal.format(formatoBanco);
             ResultSet agenda = s.executeQuery("INSERT INTO AGENDA (CODIGOPESSOA, DATAHORAINICIO, DATAHORAFINAL, INDICADORATIVO) VALUES (" +
-                    codigoPessoa + ", TIMESTAMP '" + inicioBanco + "', TIMESTAMP '" + fimBanco + "', 0) RETURNING CODIGO");
+                    codigoPessoa + ", TIMESTAMP '" + inicioBanco + "', TIMESTAMP '" + fimBanco + "', " + (confirmar ? 1 : 0) + ") RETURNING CODIGO");
             if (!agenda.next()) { conexao.rollback(); return false; }
             int codigoAgenda = agenda.getInt("CODIGO");
             if (s.executeUpdate("INSERT INTO SERVICOAGENDA (CODIGOSERVICO, CODIGOAGENDA) VALUES (" + codigoServico + ", " + codigoAgenda + ")") == 0) {
